@@ -126,19 +126,6 @@ CREATE TABLE `replypost` (
 
 /*Data for the table `replypost` */
 
-insert  into `replypost`(`replyID`,`postID`,`replyContent`,`replyTime`,`userStatus`,`starNum`,`userID`,`userName`,`userEmail`) values 
-(1,4,'    本句的主干是The way…means that…。主语后的定语从句对The way进行了说明，从句前省略了关系代词that。该定语从句的主语是consumers，谓语是approach，宾语为the process，后面的of making purchase decisions是解释the process的后置定语。主干的谓语动词means之后是that引导的宾语从句，主语为marketing\'s impact，谓语为stems from，宾语为a broad range of factors， beyond conventional paid media是修饰factors的后置定语。\r\n    译文：如今消费者购买商品的决策过程说明，市场营销的影响力来自于传统付费媒介以外的诸多因素。','2018-04-19 10:10:30',1,0,1,'朱伟','zhuwei@qq.com'),
-(2,3,'    每个人都有每个人的特点，也会有自己适合的方法，如果有同学有更好的方法，希望分享出来。但是我这个看似很笨的方法确实具有普遍适用性，我自己的学生，按照这个认真做的，都会有一个配得上自己努力的成绩。','2018-04-19 12:43:58',1,0,1,'朱伟','zhuwei@qq.com'),
-(4,3,'要多背单词哦','2018-04-20 15:06:47',0,0,19,'彭于晏','pyy@qq.com'),
-(6,3,'不能什么事都依赖老师','2018-04-20 15:11:02',0,0,1,'小埋','123@qq.com'),
-(7,1,'有时间就刷两遍吧','2018-04-20 15:12:22',0,0,1,'小埋','123@qq.com'),
-(11,4,'说得好','2018-04-20 17:21:07',0,0,19,'彭于晏','pyy@qq.com'),
-(14,3,'(⊙﹏⊙)','2018-04-21 11:16:21',0,0,9,'马云','c@qq.com'),
-(15,3,'are you OK？','2018-04-21 11:21:06',0,0,21,'雷军','leijun@qq.com'),
-(16,3,'一起学习呀','2018-04-21 13:31:20',0,0,10,'芳心纵火犯','d@qq.com'),
-(18,3,'谢谢大家的回答','2018-04-22 16:25:54',0,0,17,'我不是马化腾','mht@qq.com'),
-(19,2,'伟哥的微博有回答哦','2018-04-22 16:28:04',0,0,17,'我不是马化腾','mht@qq.com'),
-(22,2,'可以看看考研英语阅读同源外刊时文精析，文章数量不多不少，精选英语真题同源外刊的文章，可以买新版的。','2018-04-22 22:02:16',1,0,1,'朱伟','zhuwei@qq.com');
 
 /*Table structure for table `student` */
 
@@ -170,7 +157,6 @@ insert  into `student`(`userID`,`username`,`password`,`sex`,`email`,`photo`,`sig
 (16,'林俊杰','123',NULL,'p@qq.com','res/user/p@qq.com/pic.jpg',NULL,0,NULL),
 (17,'我不是马化腾','123','男','mht@qq.com','res/user/mht@qq.com/pic.jpg','想一想，不充钱，你能变得更强吗？',0,NULL),
 (19,'彭于晏','123','男','pyy@qq.com','res/user/pyy@qq.com/pic.jpg','清除心中的不可以，告诉自己我可以',0,NULL),
-(20,'李宗豪','123','男','lzh@qq.com','res/user/lzh@qq.com/pic.jpg',NULL,0,NULL),
 (21,'雷军','123','男','leijun@qq.com','res/user/leijun@qq.com/pic.jpg','Are you ok？',0,NULL);
 
 /*Table structure for table `studentcourse` */
@@ -188,36 +174,7 @@ CREATE TABLE `studentcourse` (
 
 /*Data for the table `studentcourse` */
 
-insert  into `studentcourse`(`relationID`,`courseID`,`studentID`,`studentGrade`,`studentAnswer`) values 
-(8,1,13,13,'A;未作答;未作答;未作答;未作答;未作答;未作答;未作答'),
-(9,2,13,NULL,NULL),
-(11,3,13,NULL,NULL),
-(12,4,13,NULL,NULL),
-(17,1,2,NULL,NULL),
-(18,28,2,NULL,NULL),
-(19,28,1,NULL,NULL),
-(21,2,8,NULL,NULL),
-(22,3,17,NULL,NULL),
-(24,1,7,38,'B;B;B;C;A;D;B;B'),
-(28,28,19,NULL,NULL),
-(31,34,7,NULL,NULL),
-(35,35,7,NULL,NULL),
-(36,35,8,NULL,NULL),
-(37,2,9,NULL,NULL),
-(38,35,21,NULL,NULL),
-(41,1,19,75,'A;A;A;A;A;A;A;A'),
-(42,2,1,NULL,NULL),
-(43,35,1,NULL,NULL),
-(45,2,19,NULL,NULL),
-(46,1,1,75,'A;A;A;A;A;A;A;A'),
-(47,1,9,50,'A;B;B;C;A;A;B;A'),
-(48,1,10,50,'C;C;A;C;B;A;A;B'),
-(49,1,11,100,'A;B;A;A;A;A;A;B'),
-(50,1,14,NULL,NULL),
-(51,14,19,NULL,NULL),
-(52,1,17,NULL,NULL),
-(53,1,22,NULL,NULL),
-(54,1,21,NULL,NULL);
+
 
 /*Table structure for table `stuhomework` */
 
@@ -235,9 +192,6 @@ CREATE TABLE `stuhomework` (
 
 /*Data for the table `stuhomework` */
 
-insert  into `stuhomework`(`shwID`,`hwID`,`subTime`,`hwUrl`,`stuWorkTitle`,`studentID`) values 
-(4,1,'2018-04-29 14:48:26','WEB-INF/res/homework/作业号1/学号19/口语.docx','口语.docx',19),
-(5,1,'2018-04-29 14:49:04','WEB-INF/res/homework/作业号1/学号14/口语.docx','口语.docx',14);
 
 /*Table structure for table `teacher` */
 
@@ -310,12 +264,6 @@ CREATE TABLE `themepost` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 /*Data for the table `themepost` */
-
-insert  into `themepost`(`postID`,`studentID`,`courseID`,`postTitle`,`postContent`,`postTime`,`replyTime`,`state`) values 
-(1,19,1,'伟哥，恋练有词刷1遍够吗','如题','2018-04-18 08:58:15',NULL,0),
-(2,1,1,'伟哥，题源报刊怎么利用啊？','如题','2018-04-18 09:16:48',NULL,1),
-(3,17,1,'伟哥，能讲一讲英语怎么复习吗','谢谢','2018-04-18 16:12:34',NULL,0),
-(4,10,1,'伟哥，这个句子怎么理解？','The way consumers now approach the process of making purchase decisions means that marketing\'s impact stems from a broad range of factors beyond conventional paid media.','2018-04-19 09:26:11',NULL,0);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
