@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testlogin">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_course_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        />
+        <activity
+            android:name=".RegisteredActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".Activity_personal_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_notice"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_test_course_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_test_question"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_test_answer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_bbs_course_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_bbs_post_list"
+            android:label="@string/title_activity_bbs_post_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_bbs_deliver_post"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_bbs_reply_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_course_res_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name="com.example.services.DownLoadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activity_homework"
+            android:theme="@style/AppTheme.NoActionBar" ></activity>
+    </application>
+
+</manifest>
